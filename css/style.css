@@ -27,7 +27,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    background: url('/imagens/background-escuro.jpg') no-repeat;
+    background: url('../imagens/background-escuro.jpg') no-repeat;
     background-size: 100%;
 
     width: 100vw;
