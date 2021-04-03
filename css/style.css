@@ -27,7 +27,7 @@ body {
     align-items: center;
     justify-content: space-between;
 
-    background: url('/imagens/background-escuro.jpg') no-repeat;
+    background: url('../imagens/background-escuro.jpg') no-repeat;
     background-size: 100%;
 
     width: 100vw;
@@ -176,10 +176,6 @@ body {
 
     color: white;
 
-    font-size: 2rem;
-
-    height: 40px;
-
     text-shadow: 0 0 10px black;
 
 }
@@ -194,7 +190,7 @@ body {
 
 .container .sectionAreaLogin .divisoriaSocialMedia .fa-google:hover {
 
-    background: linear-gradient(to right bottom, #EA4335, #FBBC05, #34A853, #4285F4);
+    background: linear-gradient(to right, #EA4335, #FBBC05, #34A853, #4285F4);
     border: 1px solid #4285F4;
 
 }
@@ -289,7 +285,7 @@ body {
 
     margin-bottom: 2rem;
 
-    display: none;
+    display: block;
 
 }
 
@@ -380,5 +376,7 @@ body {
 
     background: #FF4655;
     color: black;
+
+    transform: rotate(180deg);
 
 }

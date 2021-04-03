@@ -1,12 +1,6 @@
-var data = new Date()
-var hora = data.getHours()
+function insertFundo() {
 
-if (hora >= 17) {
-
-    document.getElementById('container').style.background = '/imagens/background-escuro.jpg'
-
-} else {
-
-    document.getElementById('container').style.background = '/imagens/background-claro.jpg'
+    document.getElementById('container').style.background = 'url(../imagens/background-claro.jpg)  no-repeat'
+    document.getElementById('container').style.backgroundSize = '100%'
 
 }
