@@ -1,8 +1,384 @@
-body {
+* {
 
-    background: url('/imagens/background-claro.jpg') no-repeat;
-    background-size: 100%;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    text-decoration: none;
+
+    font-family: 'Josefin Sans';
+
+    outline: none;
 
 }
 
+body {
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: url('/imagens/background-escuro.jpg') no-repeat;
+    background-size: 100%;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.container .sectionAreaLogin {
+
+    background: white;
+
+    width: 400px;
+    height: 100vh;
+
+    padding: 2rem;
+
+}
+
+.container .sectionAreaLogin header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+}
+
+.container .sectionAreaLogin header span {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: gray;
+    color: white;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    border-radius: 50%;
+
+    width: 30px;
+    height: 30px;
+
+    margin-bottom: 1rem;
+
+}
+
+.container .sectionAreaLogin header img {
+
+    width: 70px;
+
+    margin-bottom: 1rem;
+
+}
+
+.container .sectionAreaLogin .divisoriaInput {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    height: 150px;
+
+}
+
+.container .sectionAreaLogin .divisoriaInput h1 {
+
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+.container .sectionAreaLogin .divisoriaInput input {
+
+    color: black;
+
+    font-size: 1.2rem;
+
+    border: 1px solid black;
+
+    padding: 0 1rem;
+
+    width: 300px;
+    height: 45px;
+
+    transition: 0.2s;
+
+}
+
+.container .sectionAreaLogin .divisoriaInput input::placeholder {
+
+    color: black;
+
+}
+
+.container .sectionAreaLogin .divisoriaInput input:hover {
+
+    color: #FF4655;
+
+}
+
+.container .sectionAreaLogin .divisoriaInput input:focus {
+
+    border: 1px solid #FF4655;
+
+}
+
+.container .sectionAreaLogin .divisoriaSocialMedia {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 300px;
+    height: 40px;
+
+    margin: 1rem;
+
+}
+
+.container .sectionAreaLogin .divisoriaSocialMedia .fab {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+
+    font-size: 1.5rem;
+
+    border: 1px solid;
+    border-radius: 5px;
+
+    width: 90px;
+    height: 35px;
+
+    transition: 0.2s;
+
+}
+
+.container .sectionAreaLogin .divisoriaSocialMedia .fab:hover {
+
+    color: white;
+
+    font-size: 2rem;
+
+    height: 40px;
+
+    text-shadow: 0 0 10px black;
+
+}
+
+.container .sectionAreaLogin .divisoriaSocialMedia .fa-facebook:hover {
+
+    background: #1877F2;
+
+    border: 1px solid #1877F2;
+
+}
+
+.container .sectionAreaLogin .divisoriaSocialMedia .fa-google:hover {
+
+    background: linear-gradient(to right bottom, #EA4335, #FBBC05, #34A853, #4285F4);
+    border: 1px solid #4285F4;
+
+}
+
+.container .sectionAreaLogin .divisoriaSocialMedia .fa-apple:hover {
+
+    background: black;
+
+    text-shadow: 0 0 10px white;
+
+}
+
+.container .sectionAreaLogin .divisoriaCheckbox {
+
+    margin: 1rem;
+
+}
+
+.container .sectionAreaLogin footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-direction: column;
+
+    width: 200px;
+
+    margin: auto;
+
+    margin-top: 200px;
+
+}
+
+.container .sectionAreaLogin footer a {
+
+    font-size: 1.1rem;
+
+    color: black;
+
+    margin-top: 1rem;
+
+}
+
+.container .sectionAreaLogin footer a:hover {
+
+    color: #FF4655;
+
+}
+
+.container .sectionAreaLogin footer span {
+
+    margin-top: 2rem;
+
+    color: rgba(0, 0, 0, 0.6);
+
+}
+
+.container .sectionPlay {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+
+    gap: 10px;
+
+    width: 500px;
+    height: 100vh;
+
+}
+
+.container .sectionPlay .buttonPlay {
+
+    width: 290px;
+
+    margin-top: 450px;
+
+}
+
+.container .sectionPlay .buttonPlay p {
+
+    background: white;
+    color: black;
+
+    font-size: 1.1rem;
+
+    text-align: left;
+    
+    border-radius: 5px;
+
+    padding: 1rem;
+
+    margin-bottom: 2rem;
+
+    display: none;
+
+}
+
+.container .sectionPlay .buttonPlay button:hover p {
+
+    display: block;
+
+}
+
+.container .sectionPlay .buttonPlay p span {
+
+    color: #FF4655;
+
+}
+
+.container .sectionPlay .buttonPlay p::before {
+
+    background: white;
+    
+    content: '';
+    
+    width: 20px;
+    height: 20px;
+    
+    position: absolute;
+    
+    transform: rotate(45deg) translateX(160px) translateY(-10px);
+
+}
+
+.container .sectionPlay .buttonPlay button {
+
+    background: rgba(128, 128, 128, 0.5);
+    color: white;
+
+    font-size: 3rem;
+    font-weight: 900;
+
+    border: 1px solid rgba(128, 128, 128, 0.2);
+
+    border-radius: 5px;
+
+    width: 290px;
+    height: 80px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+.container .sectionPlay .buttonPlay button:hover {
+
+    background: #FF4655;
+    color: black;
+
+}
+
+.container .sectionPlay .buttonConfiguracao {
+
+    margin-top: 650px;
+
+}
+
+.container .sectionPlay .buttonConfiguracao .fas {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(128, 128, 128, 0.5);
+    color: white;
+
+    font-size: 2rem;
+
+    border-radius: 5px;
+
+    width: 45px;
+    height: 45px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+.container .sectionPlay .buttonConfiguracao .fas:hover {
+
+    background: #FF4655;
+    color: black;
+
+}
