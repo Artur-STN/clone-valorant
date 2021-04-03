@@ -285,14 +285,6 @@ body {
 
     margin-bottom: 2rem;
 
-    display: block;
-
-}
-
-.container .sectionPlay .buttonPlay button:hover p {
-
-    display: block;
-
 }
 
 .container .sectionPlay .buttonPlay p span {
@@ -378,5 +370,33 @@ body {
     color: black;
 
     transform: rotate(180deg);
+
+}
+
+.buttonTrocaFundo {
+
+    background: rgba(128, 128, 128, 0.5);
+    color: white;
+
+    font-size: 3rem;
+    font-weight: 900;
+
+    border: 1px solid rgba(128, 128, 128, 0.2);
+
+    border-radius: 5px;
+
+    width: 290px;
+    height: 100px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+.buttonTrocaFundo:hover {
+
+    background: #FF4655;
+    color: black;
 
 }
